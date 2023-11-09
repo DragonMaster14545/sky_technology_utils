@@ -117,6 +117,7 @@ minecraft {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
+    maven { url = "https://maven.tterrag.com/" }
     maven {
         url "https://cursemaven.com"
         content {
@@ -131,8 +132,13 @@ dependencies {
     implementation fg.deobf("curse.maven:AE2-223794:4733119")
     implementation fg.deobf("curse.maven:storage-drawers-223852:3884263")
     implementation fg.deobf("curse.maven:jei-238222:4712866")
-    implementation fg.deobf("curse.maven:GTCEUm-890405:4840481")
+    /*
+    implementation(fg.deobf("curse.maven:GTCEUm-890405:4840481")) {transitive=false}
+    implementation("io.github.llamalad7:mixinextras-forge:0.2.0-rc.5")
+    implementation(fg.deobf("com.tterrag.registrate:Registrate:MC1.19-1.1.5"))
     implementation fg.deobf("curse.maven:LDLib-626676:4839867")
+    implementation fg.deobf("curse.maven:Architectury-419699:4555749")
+    */
 }
 
 // Example for how to get properties into the manifest for reading at runtime.
