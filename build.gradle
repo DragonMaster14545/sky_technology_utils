@@ -128,9 +128,11 @@ repositories {
 dependencies {
 
     minecraft 'net.minecraftforge:forge:1.19.2-43.3.0'
-    implementation(fg.deobf("curse.maven:AE2-223794:4733119"))
-    implementation(fg.deobf("curse.maven:JEI-238222:4712866"))
-    implementation(fg.deobf("curse.maven:StorageDrawers-223852:3858840"))
+    implementation fg.deobf("curse.maven:AE2-223794:4733119")
+    implementation fg.deobf("curse.maven:storage-drawers-223852:3884263")
+    implementation fg.deobf("curse.maven:jei-238222:4712866")
+    implementation fg.deobf("curse.maven:GTCEUm-890405:4840481")
+    implementation fg.deobf("curse.maven:LDLib-626676:4839867")
 }
 
 // Example for how to get properties into the manifest for reading at runtime.
