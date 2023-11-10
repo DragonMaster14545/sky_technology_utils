@@ -1,6 +1,7 @@
 package net.dragonMaster.sky_technology_utils.blocks;
 
 import net.dragonMaster.sky_technology_utils.SkyTechnologyUtils;
+import net.dragonMaster.sky_technology_utils.blocks.custom.YeetBlock;
 import net.dragonMaster.sky_technology_utils.items.ModCreativeModeTab;
 import net.dragonMaster.sky_technology_utils.items.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -20,6 +21,7 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, SkyTechnologyUtils.MOD_ID);
 
     public static  final RegistryObject<Block> TEST_BLOCK = registerBlock("test_block",() -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.SkyTechnologyUtilsTabMisc);
+    public static  final RegistryObject<Block> TEST_YEET_BLOCK = registerBlock("test_yeet_block",() -> new YeetBlock(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.SkyTechnologyUtilsTabMisc);
 
 
 

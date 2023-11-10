@@ -1,5 +1,7 @@
 {
   "item.sky_technology_utils.test_item":"Test item",
+  "item.sky_technology_utils.test_dice":"Test dice",
   "block.sky_technology_utils.test_block":"Test block",
+  "block.sky_technology_utils.test_yeet_block":"Test yeet block",
   "itemGroup.SkyTechnologyUtilsTabMisc":"Sky Technology Utils Misc"
 }
