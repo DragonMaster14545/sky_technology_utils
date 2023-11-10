@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": {"model": "sky_technology_utils:block/test_block"}
+  }
+}

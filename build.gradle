@@ -129,10 +129,11 @@ repositories {
 dependencies {
 
     minecraft 'net.minecraftforge:forge:1.19.2-43.3.0'
+    implementation fg.deobf("curse.maven:jei-238222:4712866")
+
+    /*
     implementation fg.deobf("curse.maven:AE2-223794:4733119")
     implementation fg.deobf("curse.maven:storage-drawers-223852:3884263")
-    implementation fg.deobf("curse.maven:jei-238222:4712866")
-    /*
     implementation(fg.deobf("curse.maven:GTCEUm-890405:4840481")) {transitive=false}
     implementation("io.github.llamalad7:mixinextras-forge:0.2.0-rc.5")
     implementation(fg.deobf("com.tterrag.registrate:Registrate:MC1.19-1.1.5"))
