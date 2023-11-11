@@ -3,6 +3,8 @@ package net.dragonMaster.sky_technology_utils;
 import com.mojang.logging.LogUtils;
 import net.dragonMaster.sky_technology_utils.blocks.ModBlocks;
 import net.dragonMaster.sky_technology_utils.items.ModItems;
+import net.dragonMaster.sky_technology_utils.painting.ModPaintings;
+import net.dragonMaster.sky_technology_utils.villager.ModVillagers;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.api.distmarker.Dist;
@@ -28,6 +30,8 @@ public class SkyTechnologyUtils {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModVillagers.register(modEventBus);
+        ModPaintings.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
 
@@ -36,7 +40,9 @@ public class SkyTechnologyUtils {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-
+    event.enqueueWork(() -> {
+        ModVillagers.registerPOIs();
+    });
     }
 
 

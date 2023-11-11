@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/crop",
   "textures": {
-    "all": "sky_technology_utils:block/test_crop_stage5"
+    "crop": "sky_technology_utils:block/test_crop_stage5"
   }
 }

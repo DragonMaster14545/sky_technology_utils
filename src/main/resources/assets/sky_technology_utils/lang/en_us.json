@@ -7,5 +7,6 @@
   "block.sky_technology_utils.test_yeet_block":"Test yeet block",
   "block.sky_technology_utils.test_lamp":"Test lamp",
   "block.sky_technology_utils.test_crop":"Test crop",
-  "itemGroup.SkyTechnologyUtilsTabMisc":"Sky Technology Utils Misc"
+  "itemGroup.SkyTechnologyUtilsTabMisc":"Sky Technology Utils Misc",
+  "entity.minecraft.villager.sky_technology_utils.test_trader": "Test trader"
 }
