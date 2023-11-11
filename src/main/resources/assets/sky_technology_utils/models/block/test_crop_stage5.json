@@ -2,5 +2,6 @@
   "parent": "minecraft:block/crop",
   "textures": {
     "crop": "sky_technology_utils:block/test_crop_stage5"
-  }
+  },
+  "render_type": "cutout"
 }

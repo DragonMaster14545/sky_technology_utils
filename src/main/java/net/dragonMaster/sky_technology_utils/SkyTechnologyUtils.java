@@ -3,6 +3,7 @@ package net.dragonMaster.sky_technology_utils;
 import com.mojang.logging.LogUtils;
 import net.dragonMaster.sky_technology_utils.blocks.ModBlocks;
 import net.dragonMaster.sky_technology_utils.items.ModItems;
+import net.dragonMaster.sky_technology_utils.networking.ModPackages;
 import net.dragonMaster.sky_technology_utils.painting.ModPaintings;
 import net.dragonMaster.sky_technology_utils.villager.ModVillagers;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
@@ -43,6 +44,8 @@ public class SkyTechnologyUtils {
     event.enqueueWork(() -> {
         ModVillagers.registerPOIs();
     });
+
+    ModPackages.register();
     }
 
 
@@ -52,7 +55,6 @@ public class SkyTechnologyUtils {
     public static class ClientModEvents{
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event){
-            ItemBlockRenderTypes.setRenderLayer(ModBlocks.TEST_CROP.get(), RenderType.cutout());
         }
     }
 }
