@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "sky_technology_utils:block/test_lamp_off"
+  }
+}

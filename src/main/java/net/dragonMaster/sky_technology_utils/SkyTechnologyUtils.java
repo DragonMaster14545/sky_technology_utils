@@ -3,6 +3,8 @@ package net.dragonMaster.sky_technology_utils;
 import com.mojang.logging.LogUtils;
 import net.dragonMaster.sky_technology_utils.blocks.ModBlocks;
 import net.dragonMaster.sky_technology_utils.items.ModItems;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -33,8 +35,7 @@ public class SkyTechnologyUtils {
 
     }
 
-    private void commonSetup(final FMLCommonSetupEvent event)
-    {
+    private void commonSetup(final FMLCommonSetupEvent event) {
 
     }
 
@@ -45,7 +46,7 @@ public class SkyTechnologyUtils {
     public static class ClientModEvents{
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event){
-
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.TEST_CROP.get(), RenderType.cutout());
         }
     }
 }

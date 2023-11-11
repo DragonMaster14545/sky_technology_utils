@@ -1,6 +1,8 @@
 package net.dragonMaster.sky_technology_utils.blocks;
 
 import net.dragonMaster.sky_technology_utils.SkyTechnologyUtils;
+import net.dragonMaster.sky_technology_utils.blocks.custom.TestCrop;
+import net.dragonMaster.sky_technology_utils.blocks.custom.TestLamp;
 import net.dragonMaster.sky_technology_utils.blocks.custom.YeetBlock;
 import net.dragonMaster.sky_technology_utils.items.ModCreativeModeTab;
 import net.dragonMaster.sky_technology_utils.items.ModItems;
@@ -8,6 +10,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -22,6 +25,8 @@ public class ModBlocks {
 
     public static  final RegistryObject<Block> TEST_BLOCK = registerBlock("test_block",() -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.SkyTechnologyUtilsTabMisc);
     public static  final RegistryObject<Block> TEST_YEET_BLOCK = registerBlock("test_yeet_block",() -> new YeetBlock(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.SkyTechnologyUtilsTabMisc);
+    public static  final RegistryObject<Block> TEST_LAMP = registerBlock("test_lamp",() -> new TestLamp(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops().lightLevel(state -> state.getValue(TestLamp.LIT) ? 15 : 0)), ModCreativeModeTab.SkyTechnologyUtilsTabMisc);
+    public static  final RegistryObject<Block> TEST_CROP = BLOCKS.register("test_crop",() -> new TestCrop(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
 
 
 
