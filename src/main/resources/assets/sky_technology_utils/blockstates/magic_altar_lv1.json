@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "sky_technology_utils:block/magic_altar_lv1"
+    },
+    "facing=south": {
+      "model": "sky_technology_utils:block/magic_altar_lv1",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "sky_technology_utils:block/magic_altar_lv1",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "sky_technology_utils:block/magic_altar_lv1",
+      "y": 90
+    }
+  }
+}

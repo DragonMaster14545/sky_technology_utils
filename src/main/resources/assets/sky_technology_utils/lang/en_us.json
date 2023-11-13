@@ -1,5 +1,6 @@
 {
   "item.sky_technology_utils.test_item":"Test item",
+  "item.sky_technology_utils.test_item2":"Test item2",
   "item.sky_technology_utils.test_dice":"Test dice",
   "item.sky_technology_utils.test_seeds":"Test seeds",
   "item.sky_technology_utils.test_fruit":"Test fruit",
@@ -8,6 +9,7 @@
   "block.sky_technology_utils.test_yeet_block":"Test yeet block",
   "block.sky_technology_utils.test_lamp":"Test lamp",
   "block.sky_technology_utils.test_crop":"Test crop",
+  "block.sky_technology_utils.magic_altar_lv1":"Magic altar level 1",
 
   "itemGroup.SkyTechnologyUtilsTabMisc":"Sky Technology Utils Misc",
 

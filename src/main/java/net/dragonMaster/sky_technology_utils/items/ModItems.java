@@ -15,6 +15,7 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, SkyTechnologyUtils.MOD_ID);
 
     public static final RegistryObject<Item> TestItem = ITEMS.register("test_item",() -> new Item(new Item.Properties().tab(ModCreativeModeTab.SkyTechnologyUtilsTabMisc)));
+    public static final RegistryObject<Item> TestItem2 = ITEMS.register("test_item2",() -> new Item(new Item.Properties().tab(ModCreativeModeTab.SkyTechnologyUtilsTabMisc)));
     public static final RegistryObject<Item> TestDice = ITEMS.register("test_dice",() -> new DiceItem(new Item.Properties().tab(ModCreativeModeTab.SkyTechnologyUtilsTabMisc)));
     public static final RegistryObject<Item> TestSeeds = ITEMS.register("test_seeds",() -> new ItemNameBlockItem(ModBlocks.TEST_CROP.get(), new Item.Properties().tab(ModCreativeModeTab.SkyTechnologyUtilsTabMisc)));
     public static final RegistryObject<Item> TestFruit = ITEMS.register("test_fruit",() -> new Item(new Item.Properties().tab(ModCreativeModeTab.SkyTechnologyUtilsTabMisc).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).build())));

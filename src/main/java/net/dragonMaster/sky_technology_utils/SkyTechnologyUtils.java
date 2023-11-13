@@ -42,10 +42,10 @@ public class SkyTechnologyUtils {
 
     private void commonSetup(final FMLCommonSetupEvent event) {
     event.enqueueWork(() -> {
+        ModPackages.register();
         ModVillagers.registerPOIs();
     });
 
-    ModPackages.register();
     }
 
 
